@@ -1,0 +1,30 @@
+
+<h2 style="background-color:rgb(6, 6, 80); color:white; text-align: center;"> Admin List</h2>
+<table class = "table table-striped " style="border: 5px ;">
+    <thead>
+        <tr>
+            <th style="background-color: darkgrey;">ID</th>
+            <th style="background-color: darkgrey;"> ADMIN Name</th>
+            <th style="background-color: darkgrey;"> EmailID </th>
+            
+          
+            <th style="background-color: darkgrey;"> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let user of user" >
+            <td>{{user.uid}}</td>
+            <td> {{ user.username }} </td>
+            
+           <td> {{ user.uemailid}} </td>
+          
+            <td>
+
+                <button (click) = "updateUser(user.uid)" class = "btn btn-warning"> Update</button>
+                <button (click) = "deleteUser(user.uid)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "userDetails(user.uid)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

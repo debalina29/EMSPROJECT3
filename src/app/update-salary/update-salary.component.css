@@ -1,0 +1,10 @@
+.container{
+    
+    height: 80vh;
+    background-color: rgb(240, 209, 203);
+    justify-content: center;
+    display: flex;
+}
+form{
+    width:500px;
+}

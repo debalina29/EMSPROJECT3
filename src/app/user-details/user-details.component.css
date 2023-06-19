@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    background-color:rgb(230, 232, 245);
+}
+.data{
+    width:500px;
+    text-align: center;
+}
+.image1{
+    margin-left: 100px;
+    width:800px;
+    
+}

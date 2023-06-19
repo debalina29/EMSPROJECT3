@@ -1,0 +1,16 @@
+.cont{
+    display: flex;
+    height:100px;
+    
+}
+img{
+    width:200px;
+    height:100px;
+}
+.header{
+    text-align: center;
+    margin-left: 100px;
+    
+    height: 100px;
+    
+}

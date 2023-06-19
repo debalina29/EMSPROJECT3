@@ -1,0 +1,19 @@
+form{
+    width:500px;
+
+    
+}
+.container{
+    height:50vh;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 241, 245);
+    
+}
+img{
+    width: 500px;
+    height: 50vh;
+    margin-left: 200px;
+}

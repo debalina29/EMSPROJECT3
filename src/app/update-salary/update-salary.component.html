@@ -1,0 +1,56 @@
+<div class="col-md-6 offset-md-3" >
+
+    <h3 style="background-color:rgb(126, 7, 7); text-align: center; color: white;"> UPDATE SALARY REPORT </h3>
+   </div>
+    <div class="container">
+    <form (ngSubmit) = "onSubmit()" #form="ngForm">
+
+<div class="form-group">
+    <label style="font-weight: bold;"> Name</label>
+    <input type="text" class ="form-control" id = "name"
+        [(ngModel)] = "salary.name" name = "name">
+</div>  
+  <div class="form-group">
+    <label style="font-weight: bold;"> Department</label>
+    <input type="text" class ="form-control" id = "department"
+        [(ngModel)] = "salary.department" name = "department">
+</div>  
+
+
+ <div class="form-group">
+    <label style="font-weight: bold;"> Month</label>
+    <input type="text" class ="form-control" id = "month"
+        [(ngModel)] = "salary.month" name = "month">
+</div> 
+<div class="form-group">
+    <label style="font-weight: bold;"> Basic</label>
+    <input type="text" class ="form-control" id = "basic"
+        [(ngModel)] = "salary.basic" name = "basic">
+</div>  
+<div class="form-group">
+    <label style="font-weight: bold;"> HRA</label>
+    <input type="text" class ="form-control" id = "hra"
+        [(ngModel)] = "salary.hra" name = "hra">
+</div>  
+
+<div class="form-group">
+    <label style="font-weight: bold;"> Total</label>
+    <input type="text" class ="form-control" id = "total"
+        [(ngModel)] = "salary.total" name = "total">
+</div>  
+<div class="form-group">
+    <label style="font-weight: bold;"> Total paid Days</label>
+    <input type="text" class ="form-control" id = "totalpaiddays"
+        [(ngModel)] = "salary.totalpaiddays" name = "totalpaiddays">
+</div>  
+
+
+
+<button class = "btn btn-success" type ="submit" >Submit</button>
+
+</form>
+</div> 
+
+<div>
+<img [src]="image5">
+</div>

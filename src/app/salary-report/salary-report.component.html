@@ -1,0 +1,41 @@
+
+<h2 style="background-color:rgb(126, 12, 12); color:white;text-align:  center;"> Salary Report</h2>
+<table class = "table table-striped " style="border: 5px ;">
+    <thead>
+        <tr>
+            <th style="background-color: darkgrey;">ID</th>
+            <th style="background-color: darkgrey;">  Name</th>
+            <th style="background-color: darkgrey;"> Department</th>
+
+ <th style="background-color: darkgrey;">Month</th>
+            <th style="background-color: darkgrey;">  Basic</th>
+            <th style="background-color: darkgrey;"> HRA</th>
+          
+
+            <th style="background-color: darkgrey;"> Total</th>
+            <th style="background-color: darkgrey;"> Total Paid Days</th>
+            <th style="background-color: darkgrey;"> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let salary of salarys" >
+            <td>{{salary.sid}}</td>
+            <td> {{ salary.name }} </td>
+            <td> {{ salary.department}} </td>
+            <td> {{ salary.month }} </td>
+            <td> {{ salary.basic }} </td>
+
+            <td> {{ salary.hra}} </td>
+
+            <td> {{ salary.total }} </td>
+          
+            <td> {{ salary.totalpaiddays }} </td>
+             <td>
+                <button (click) = "updateSalary(salary.sid)" class = "btn btn-warning"> Update</button>
+                <button (click) = "deleteSalary(salary.sid)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "salaryDetails(salary.sid)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td> 
+        </tr>
+    </tbody>
+</table>
+
